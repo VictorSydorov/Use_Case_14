@@ -9,13 +9,7 @@ namespace Use_Case_14.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IStringLocalizer<HomeController> stringLocalizer;
-
-        public HomeController(IStringLocalizer<HomeController> stringLocalizer)
-        {
-            this.stringLocalizer = stringLocalizer;
-        }
-
+       
         public IActionResult Index()
         {
             var culture = CultureInfo.CurrentCulture;

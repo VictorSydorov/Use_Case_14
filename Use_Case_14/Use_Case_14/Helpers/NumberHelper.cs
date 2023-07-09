@@ -6,8 +6,7 @@
     {
         public static string FormatNumber(this int number, CultureInfo culture)
         {            
-            NumberFormatInfo formatInfo = culture.NumberFormat;
-
+           
             string formattedNumber = number.ToString("N0", culture); // Default format with no decimal places
 
             if (number >= 1000000000)
